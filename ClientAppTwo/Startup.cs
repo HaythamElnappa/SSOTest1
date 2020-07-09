@@ -16,10 +16,10 @@ namespace ClientAppTwo
         {
             services.AddAuthentication(config =>
             {
-                config.DefaultScheme = "Cookie";
+                config.DefaultScheme = "CC";
                 config.DefaultChallengeScheme = "oidc";
             })
-                .AddCookie("Cookie")
+                .AddCookie("CC")
                 .AddOpenIdConnect("oidc", config =>
                 {
                     config.Authority = "https://localhost:44393/";

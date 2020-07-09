@@ -40,7 +40,8 @@ namespace IDServer
                      ClientSecrets = {new Secret("client_secret_two".ToSha256())},
                      AllowedGrantTypes = GrantTypes.Code,
                      AllowedScopes = { "APIone" , "ClientApp" , IdentityServer4.IdentityServerConstants.StandardScopes.OpenId , IdentityServer4.IdentityServerConstants.StandardScopes.Profile },
-                     RedirectUris = {"https://localhost:44358/signin-oidc" }
+                     RedirectUris = {"https://localhost:44358/signin-oidc" },
+                     RequireConsent = false
                      
                 }
             };
